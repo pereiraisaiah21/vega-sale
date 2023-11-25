@@ -284,9 +284,8 @@
     }
   }
   &__return {
-    border: 1px solid #ccc;
-    padding: 0.5rem 0.8rem;
-    border-radius: 10px;
+    border: none;
+    background-color: unset;
     cursor: pointer;
   }
 }

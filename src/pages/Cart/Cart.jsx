@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { BsArrowRight } from 'react-icons/bs'
-
 import CartHeader from './CartHeader'
-import CartSteps from './CartSteps'
+import CartStepsAndActions from './CartSteps'
 import CartFooter from './CartFooter'
 import CartProduct from './CartProduct'
 import CartShipping from './CartShipping'
@@ -22,7 +20,7 @@ const Cart = () => {
 
   // Config
   const steps = ['Cart', 'Shipping', 'Payment', 'Order', 'Place Order']
-  const [currentStep, setCurrentStep] = useState(0)
+  const [currentStep, setCurrentStep] = useState(3)
   const [showNextStep, setShowNextStep] = useState(true)
 
   // Data
@@ -40,6 +38,27 @@ const Cart = () => {
       quantity: 1,
       image: 'https://placehold.co/600x400',
       price: 5.99 // Adicione o preço do produto aqui
+    },
+    {
+      id: 3,
+      name: 'Product 3',
+      quantity: 1,
+      image: 'https://placehold.co/600x400',
+      price: 7.99 // Adicione o preço do produto aqui
+    },
+    {
+      id: 3,
+      name: 'Product 3',
+      quantity: 1,
+      image: 'https://placehold.co/600x400',
+      price: 7.99 // Adicione o preço do produto aqui
+    },
+    {
+      id: 3,
+      name: 'Product 3',
+      quantity: 1,
+      image: 'https://placehold.co/600x400',
+      price: 7.99 // Adicione o preço do produto aqui
     },
     {
       id: 3,
@@ -80,14 +99,6 @@ const Cart = () => {
     }
   }
 
-  // NextStep
-  const nextStep = () => {
-    if (currentStep !== 0 && !validateForm()) {
-      console.log('Erro de validação do formulário')
-      return
-    }
-    setCurrentStep(currentStep + 1)
-  }
 
   // FormValidation
   const validateForm = () => {
@@ -119,7 +130,7 @@ const Cart = () => {
   return (
     <div className='checkout'>
       <CartHeader />
-      <CartSteps steps={steps} currentStep={currentStep} />
+      <CartStepsAndActions steps={steps} currentStep={currentStep} />
       <div className='checkout__content'>
         {currentStep === 0 && (
           <CartProduct
@@ -161,11 +172,7 @@ const Cart = () => {
           />
         )}
         <div className='checkout__wrap'>
-          {true && (
-            <button type='submit' className='checkout__cta' onClick={nextStep}>
-              Continuar <BsArrowRight />
-            </button>
-          )}
+         
         </div>
         <CartFooter />
       </div>
