@@ -18,7 +18,6 @@
     &__name {
       font-weight: 600;
       font-size: 1.1rem;
-      margin-bottom: 2rem;
     }
     &__item {
     }
@@ -27,9 +26,7 @@
       text-decoration: none;
       color: #000;
       line-height: 2rem;
-      &--name {
-        color: gray;
-      }
+      &--name {}
     }
 
     @media (max-width: 768px) {
@@ -53,17 +50,30 @@
   &__text {
     @media (max-width: 768px) {
       width: 100%;
+      text-align: center;
     }
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
+
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
   }
   &__item {
+    min-width: 200px;
+    padding: .5rem 0;
     &--powered {
       flex-grow: 1;
       text-align: end;
       padding-right: 64px;
+
+      @media (max-width: 768px) {
+        text-align: center;
+        padding: 0;
+      }
     }
   }
   &__link {
