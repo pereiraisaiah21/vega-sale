@@ -55,6 +55,3 @@ Thank you for considering contributing to the project! Your efforts help make it
 
 MIT
 
-### Contact
-
-Contact: [contateisaias@proton.me](mailto:contateisaias@proton.me)
