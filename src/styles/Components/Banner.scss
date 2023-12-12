@@ -1,12 +1,18 @@
 .banner {
+  &__head {
+    background-color: #fff;
+    padding: .5rem 0 2rem;
+    margin: 0 0 2rem;
+  }
   &__wrapper {
     max-width: 100%;
     max-width: 1200px;
+    height: 100%;
     margin: 0 auto;
     .slick-dots {
       text-align: end;
       max-width: 1200px;
-      margin: 0 auto -0.5rem;
+      bottom: -1rem;
       position: relative !important;
     }
     &--highlight {
@@ -40,8 +46,7 @@
   &__link {
     text-decoration: unset;
     color: #000;
-    &--hightlight {
-    }
+    &--hightlight {}
     &--card {
       display: block;
     }
@@ -60,7 +65,7 @@
     &--card {
       display: flex;
       flex-wrap: wrap;
-      padding: 2rem 0;
+      padding: 1rem 0;
       gap: 1rem;
     }
   }
@@ -116,7 +121,7 @@
     max-width: 1200px;
     border-radius: 10px;
     background-color: #f7f7f7;
-    margin: 3rem auto;
+    margin: 2rem auto;
     padding: 1rem;
 
     @media (max-width: 576px) {
@@ -153,7 +158,7 @@
   &__checkon {
     max-width: 1200px;
     margin: auto;
-    padding: 32px 0;
+    padding: 0 0 2rem;
     &__anchor {
       color: unset;
       text-decoration: none;
@@ -231,7 +236,7 @@
   &__categories {
     max-width: 1200px;
     margin: auto;
-    padding: 32px 0;
+    padding: 0 0 2rem;
     &__title {
       width: 100%;
       padding: 16px 0;

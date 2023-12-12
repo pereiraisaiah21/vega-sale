@@ -36,7 +36,7 @@ function Footer() {
                   return (
                     <li className='footer__pages__name' key={pageIndex}>
                       <a
-                        className='footer__pages__link footer__pages__link--name'
+                        className='footer__pages__link'
                         href={page.link}
                       >
                         {page.name}

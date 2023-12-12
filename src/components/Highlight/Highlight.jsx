@@ -30,17 +30,19 @@ function Highlight({ banner }) {
   }
 
   return (
-    <div className='banner__wrapper'>
-      <div className='banner__tip'>
-        <FaAngleDown className='banner__tip__icon' />
-      </div>
-      <Slider {...sliderSettings}>
-        {banner.banners.map((singleBanner, index) => (
-          <BannerSingle banner={singleBanner} key={index} />
-        ))}
-      </Slider>
+    <div className="banner__head">
+      <div className='banner__wrapper'>
+        <div className='banner__tip'>
+          <FaAngleDown className='banner__tip__icon' />
+        </div>
+        <Slider {...sliderSettings}>
+          {banner.banners.map((singleBanner, index) => (
+            <BannerSingle banner={singleBanner} key={index} />
+          ))}
+        </Slider>
 
-      <HighlightAdvantadges />
+        <HighlightAdvantadges />
+      </div>
     </div>
   )
 }
