@@ -513,7 +513,7 @@ export async function getMainPageBannerData() {
             order: 1,
             url: 'https://via.placeholder.com/100x100',
             link: null
-          },
+          }
         ]
       },
       {
@@ -798,117 +798,115 @@ export async function getProductData({ productId }) {
   try {
     // const productData = await fetchData(`/product/${productId}`)
     const productData = {
-      "id": "produto-123",
-      "name": "Bose Phone",
-      "fullName": "Bose Phone Bose Phone Bose Phone Bose Phone",
-      "type": "wholesale",
-      "availability": true,
-      "stock": 100,
-      "info": {
-        "name": "Bose Phone",
-        "fullName": "Bose Phone Bose Phone Bose Phone Bose Phone",
-        "url": "/fpsdjif",
-        "details": "Lorem ipsum"
+      id: 'produto-123',
+      name: 'Bose Phone',
+      fullName: 'Bose Phone Bose Phone Bose Phone Bose Phone',
+      type: 'wholesale',
+      availability: true,
+      stock: 100,
+      info: {
+        name: 'Bose Phone',
+        fullName: 'Bose Phone Bose Phone Bose Phone Bose Phone',
+        url: '/fpsdjif',
+        details: 'Lorem ipsum'
       },
-      "category": {
-        "name": "Phone",
-        "path": "phone",
+      category: {
+        name: 'Phone',
+        path: 'phone'
       },
-      "details": "Lorem ipsum",
-      "images": [
+      details: 'Lorem ipsum',
+      images: [
         {
-          "original": "https://via.placeholder.com/900x900",
-          "thumbnail": "https://via.placeholder.com/50x50"
+          original: 'https://via.placeholder.com/900x900',
+          thumbnail: 'https://via.placeholder.com/50x50'
         },
         {
-          "original": "https://via.placeholder.com/900x900",
-          "thumbnail": "https://via.placeholder.com/50x50"
-        },
+          original: 'https://via.placeholder.com/900x900',
+          thumbnail: 'https://via.placeholder.com/50x50'
+        }
       ],
-      "price": {
-        "oldPrice": "9.9",
-        "newPrice": "6.9",
-        "installment": {
-          "amount": 12,
-          "value": "7.9",
-          "fees": false
+      price: {
+        oldPrice: '9.9',
+        newPrice: '6.9',
+        installment: {
+          amount: 12,
+          value: '7.9',
+          fees: false
         }
       },
-      "skus": [
+      skus: [
         {
-          "id": "10",
-          "color": {
-            "id": "16",
-            "name": "Azul",
-            "hexCode": "#00f",
-            "amount": 10
+          id: '10',
+          color: {
+            id: '16',
+            name: 'Azul',
+            hexCode: '#00f',
+            amount: 10
           },
-          "size": {
-            "id": "15",
-            "name": "Azul",
-            "hexCode": "#0f0",
-            "amount": 10
+          size: {
+            id: '15',
+            name: 'Azul',
+            hexCode: '#0f0',
+            amount: 10
           }
         }
       ],
-      "delivery": {
-        "hasUserLocation": false,
-        "fastDelivery": true,
-        "dayUntilDelivery": {
-          "firstDayExpected": 2,
-          "lastDayExpected": 4,
+      delivery: {
+        hasUserLocation: false,
+        fastDelivery: true,
+        dayUntilDelivery: {
+          firstDayExpected: 2,
+          lastDayExpected: 4
         },
-        "hasPickUpStore": true,
-        "daysUntilPickUpStore": 3
+        hasPickUpStore: true,
+        daysUntilPickUpStore: 3
       },
-      "ticket": [
-        "%PRIMEIRA10"
-      ],
-      "characteristics": [
+      ticket: ['%PRIMEIRA10'],
+      characteristics: [
         {
-          "id": "89",
-          "title": "Característica 1",
-          "description": "Descrição da Característica 1"
+          id: '89',
+          title: 'Característica 1',
+          description: 'Descrição da Característica 1'
         },
         {
-          "id": "90",
-          "title": "Característica 2",
-          "description": "Descrição da Característica 2"
+          id: '90',
+          title: 'Característica 2',
+          description: 'Descrição da Característica 2'
         },
         {
-          "id": "91",
-          "title": "Característica 3",
-          "description": "Descrição da Característica 3"
+          id: '91',
+          title: 'Característica 3',
+          description: 'Descrição da Característica 3'
         }
       ],
-      "reviews": {
-        "id": "oiuyt",
-        "amount": 15,
-        "average": 5,
-        "list": [
+      reviews: {
+        id: 'oiuyt',
+        amount: 15,
+        average: 5,
+        list: [
           {
-            "id": "review-1",
-            "description": "Otimooo produtoooooo",
-            "tags": ["Xis", "Ipsilon"],
-            "likes": 10,
-            "dislikes": 10
+            id: 'review-1',
+            description: 'Otimooo produtoooooo',
+            tags: ['Xis', 'Ipsilon'],
+            likes: 10,
+            dislikes: 10
           }
         ]
       },
-      "questions": {
-        "id": "212",
-        "list": [
+      questions: {
+        id: '212',
+        list: [
           {
-            "id": "021",
-            "question": "Qual é",
-            "answer": "Resposta"
+            id: '021',
+            question: 'Qual é',
+            answer: 'Resposta'
           }
         ]
       },
-      "bannerFooter": {
-        "id": "",
-        "image": "https://via.placeholder.com/1200x300",
-        "url": "/"
+      bannerFooter: {
+        id: '',
+        image: 'https://via.placeholder.com/1200x300',
+        url: '/'
       }
     }
 
@@ -1049,31 +1047,31 @@ export async function getFiltersData({ categoryId }) {
     // const productData = await fetchData(`/footer/pages`)
     const filtersData = [
       {
-        id: "filter1",
-        title: "Categoria 1",
+        id: 'filter1',
+        title: 'Categoria 1',
         options: [
           {
-            id: "filter1option1",
-            name: "Opção 01",
+            id: 'filter1option1',
+            name: 'Opção 01'
           },
           {
-            id: "filter1option2",
-            name: "Opção 02",
-          },
+            id: 'filter1option2',
+            name: 'Opção 02'
+          }
         ]
       },
       {
-        id: "filter2",
-        title: "Categoria 2",
+        id: 'filter2',
+        title: 'Categoria 2',
         options: [
           {
-            id: "filter2option1",
-            name: "Opção 01",
+            id: 'filter2option1',
+            name: 'Opção 01'
           },
           {
-            id: "filter2option2",
-            name: "Opção 02",
-          },
+            id: 'filter2option2',
+            name: 'Opção 02'
+          }
         ]
       }
     ]

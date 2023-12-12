@@ -34,12 +34,14 @@
     border: 1px solid #ccc;
     z-index: 1000;
     color: #ccc;
-    &__icon {}
+    &__icon {
+    }
   }
   &__link {
     text-decoration: unset;
     color: #000;
-    &--hightlight {}
+    &--hightlight {
+    }
     &--card {
       display: block;
     }
@@ -71,7 +73,7 @@
       overflow: hidden;
     }
     &--card {
-      width: calc(50% - .5rem);
+      width: calc(50% - 0.5rem);
       background-color: #efefef;
       border-radius: 5px;
       overflow: hidden;
@@ -87,7 +89,7 @@
         font-weight: 600;
       }
       p {
-        margin: 1rem 0 .5rem;
+        margin: 1rem 0 0.5rem;
       }
       button {
         background-color: unset;

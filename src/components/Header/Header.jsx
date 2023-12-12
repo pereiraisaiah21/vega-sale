@@ -44,10 +44,10 @@ function Header() {
             </select>
           </li>
           <li>
-              <FiDollarSign className='header__top__icon'/>
-              <select className='header__select'>
-                <option>USD</option>
-              </select>
+            <FiDollarSign className='header__top__icon' />
+            <select className='header__select'>
+              <option>USD</option>
+            </select>
           </li>
           <li>
             <a className='header__link header__link--top' href=''>
@@ -136,8 +136,12 @@ function Header() {
                                 </a>
                             </li> */}
               <li className='header__item header__item--user'>
-                <div className="header__search">
-                  <input type="text" className="header__input" placeholder="Digite sua busca" />
+                <div className='header__search'>
+                  <input
+                    type='text'
+                    className='header__input'
+                    placeholder='Digite sua busca'
+                  />
                 </div>
                 <a href='/contact' className='header__link header__link--user'>
                   <BiSearch className='header__link__icon header__link__icon--user' />

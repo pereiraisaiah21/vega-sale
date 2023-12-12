@@ -1,2 +1,2 @@
-import Peak from "./Peak"
+import Peak from './Peak'
 export default Peak

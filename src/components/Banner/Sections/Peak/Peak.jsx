@@ -1,7 +1,7 @@
 /**
- * 
- * @param {*} param0 
- * @returns 
+ *
+ * @param {*} param0
+ * @returns
  */
 
 const Peak = ({ banner }) => {

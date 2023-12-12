@@ -99,7 +99,6 @@ const Cart = () => {
     }
   }
 
-
   // FormValidation
   const validateForm = () => {
     if (currentStep === 1) {
@@ -171,9 +170,7 @@ const Cart = () => {
             cartItems={cartItems}
           />
         )}
-        <div className='checkout__wrap'>
-         
-        </div>
+        <div className='checkout__wrap'></div>
         <CartFooter />
       </div>
     </div>

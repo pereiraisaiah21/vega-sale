@@ -24,12 +24,13 @@ const CheckoutSteps = ({ currentStep, steps }) => {
   const returnToHome = () => {
     navigateTo('/')
   }
-  
+
   return (
-    <div className="checkout__actions">
-      <div className="checkout__return">
+    <div className='checkout__actions'>
+      <div className='checkout__return'>
         <button className='header__return' onClick={returnToHome}>
-        <BsArrowLeft />Voltar para o site
+          <BsArrowLeft />
+          Voltar para o site
         </button>
       </div>
       <div className='checkout__steps'>
@@ -54,7 +55,7 @@ const CheckoutSteps = ({ currentStep, steps }) => {
           </ul>
         </div>
       </div>
-      <div className="checkout__continue">
+      <div className='checkout__continue'>
         <button type='submit' className='checkout__cta' onClick={nextStep}>
           Continuar <BsArrowRight />
         </button>

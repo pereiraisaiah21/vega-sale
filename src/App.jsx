@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   {
     path: '/category/:id?',
     element: <Category />
-  },
+  }
   // {
   //   path: '/institutional',
   //   element: <IntitutionalIndexPage />

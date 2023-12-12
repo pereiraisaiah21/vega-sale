@@ -1,6 +1,5 @@
 import { BsArrowRight } from 'react-icons/bs'
 
-
 /**
  *
  *
@@ -10,18 +9,16 @@ const CartPayment = ({ paymentInfo, setPaymentInfo, handleInputChange }) => {
   return (
     <section>
       <div className='checkout__wrap'>
-        <div className="paymentForm">
-          <div className="shippingForm__left">
-            <img src="https://via.placeholder.com/200x200" />
+        <div className='paymentForm'>
+          <div className='shippingForm__left'>
+            <img src='https://via.placeholder.com/200x200' />
             <h2>Informações de Pagamento</h2>
-            <p>
-              Preenchas seus dados para enviarmos seus produtos!
-            </p>
+            <p>Preenchas seus dados para enviarmos seus produtos!</p>
             <button className='shippingForm__arrow'>
               <BsArrowRight />
             </button>
           </div>
-          <div className="paymentForm__right">
+          <div className='paymentForm__right'>
             <form className='paymentForm__form'>
               <div className='paymentForm__formGroup'>
                 <label htmlFor='cardNumber'>Número do Cartão</label>

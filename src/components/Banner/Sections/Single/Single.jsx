@@ -1,8 +1,6 @@
 import { useMediaQuery } from 'react-responsive'
 
-const Single = ({
-  banner
-}) => {
+const Single = ({ banner }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 })
 
   return (
@@ -17,11 +15,7 @@ const Single = ({
               className='banner__single__img'
             />
           ) : (
-            <img
-              src={banner?.image}
-              alt=''
-              className='banner__single__img'
-            />
+            <img src={banner?.image} alt='' className='banner__single__img' />
           )}
           <figcaption className='banner__single__name'></figcaption>
         </figure>

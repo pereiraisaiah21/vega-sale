@@ -113,10 +113,10 @@
     transform: scale(0.7);
   }
   &__details {
-    padding: 16px;
+    padding: 0 1rem 1rem;
     text-align: left;
     &--index {
-      border-bottom: 1px solid greenyellow;
+      // border-bottom: 1px solid greenyellow;
       // padding-bottom: 24px;
     }
   }
@@ -137,8 +137,8 @@
     &--index {
       display: flex;
       column-gap: 8px;
-      padding: 8px 0 16px;
-      font-size: 0.9rem;
+      padding: 1rem 0 2rem;
+      font-size: 0.8rem;
     }
   }
   &__oldprice {
@@ -170,7 +170,7 @@
     margin: 10px 0;
     font-size: 0.9rem;
     &--index {
-      margin: 5px 0 0;
+      // margin: 5px 0 0;
     }
   }
   &__name {
@@ -184,7 +184,7 @@
     font-size: 0.8rem;
     color: green;
     padding: 0;
-    margin: 16px 0 0;
+    margin: 2rem 0 0;
     border: 0;
     background-color: unset;
     cursor: pointer;
@@ -199,20 +199,21 @@
   &__shortinfo {
     display: none;
   }
-  &__wrap {}
-  &__top {
+  &__wrap {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 1rem auto 2rem;
+    margin: 0 auto;
     border-radius: 5px;
-    background-color: rgb(243, 243, 243);
     padding: 1rem;
 
     @media (max-width: 768px) {
       padding: 16px;
     }
+  }
+  &__top {
+    background-color: rgb(255, 255, 255);
   }
   &__bottom {
     position: relative;
@@ -252,8 +253,7 @@
   }
   &__tech {
     width: 100%;
-    height: fit-content;
-    background-color: #fffcfc;
+    height: fit-content;  
   }
   &__finalization {
     height: 64px;
@@ -261,6 +261,7 @@
     display: flex;
     padding: 16px;
     flex-wrap: wrap;
+    margin: .5rem 1rem 0;
     justify-content: flex-end;
     column-gap: 8px;
   }
@@ -390,14 +391,14 @@
     font-size: 0.9rem;
     &__item {
       &--title {
-          border: none;
-          padding: 0;
-          width: 100%;
-          margin: 0 0 16px;
+        border: none;
+        padding: 0;
+        width: 100%;
+        margin: 0 0 16px;
       }
     }
     &__unit {
-      padding: 8px .25rem;
+      padding: 8px 0.25rem;
       font-weight: 600;
       cursor: pointer;
     }
@@ -426,7 +427,10 @@
     }
   }
   &__delivery {
+    background-color: rgb(238, 238, 238);
     padding: 16px 0;
+    border-radius: 5px;
+    margin: .5rem 1rem 0;
     &__icon {
       position: absolute;
       top: 10px;
@@ -445,7 +449,7 @@
     font-size: 0.9rem;
     background-color: azure;
     border-radius: 5px;
-    margin: 0 16px;
+    margin: .5rem 1rem 0;
     &__list {
       display: flex;
       flex-wrap: wrap;
@@ -466,13 +470,14 @@
   &__amount {
     padding: 32px 16px 16px;
     font-size: 0.9rem;
+    margin: .5rem 1rem 0;
     &__title {
       display: block;
       padding: 0 0 16px;
     }
     &__select {
       margin: 8px 0;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       width: 80%;
       cursor: pointer;
       border-radius: 5px;
@@ -495,9 +500,11 @@
         border-bottom: 1px solid rgb(45, 226, 45);
       }
     }
-    &__content {}
+    &__content {
+    }
   }
   &__warnings {
+    margin: .5rem 1rem 0;
     padding: 16px;
     font-size: 0.9rem;
     &__item {
@@ -527,7 +534,8 @@
       cursor: pointer;
       border-radius: 5px;
     }
-    &__made {}
+    &__made {
+    }
     &__title {
       font-size: 1.1rem;
       font-weight: 600;
@@ -584,7 +592,8 @@
       flex-grow: 1;
       max-width: 70%;
     }
-    &__icon {}
+    &__icon {
+    }
     &__interact {
       padding-top: 8px;
     }
@@ -609,6 +618,7 @@
         font-size: 0.8rem;
       }
     }
-    &__stars {}
+    &__stars {
+    }
   }
 }

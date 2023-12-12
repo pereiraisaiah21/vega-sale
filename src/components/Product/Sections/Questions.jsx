@@ -55,8 +55,7 @@ const Questions = ({ data }) => {
         </div>
         <ul className='product__comments__made'>
           <li className='product__comments__title'>Peguntas feitas</li>
-          {
-            questions?.map((question, index) => {
+          {questions?.map((question, index) => {
             return (
               <li className='product__comments__comment' key={index}>
                 {question.question}
@@ -68,8 +67,7 @@ const Questions = ({ data }) => {
                 ) : null}
               </li>
             )
-          })
-          }
+          })}
         </ul>
       </div>
     </section>

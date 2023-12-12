@@ -1,7 +1,7 @@
 /**
- * 
- * @param {*} param0 
- * @returns 
+ *
+ * @param {*} param0
+ * @returns
  */
 
 const Card = ({ banner }) => {
@@ -17,15 +17,12 @@ const Card = ({ banner }) => {
                 <a href='/a' className='banner__link banner__link--card'>
                   <figure className='banner__figure banner__figure--card'>
                     <legend className='banner__legend banner__legend--card'>
-                      <span>
-                        {banner.name}
-                      </span>
+                      <span>{banner.name}</span>
                       <p>
-                        Shop today Deals, Lighning Deals, and limited-time discounts
+                        Shop today Deals, Lighning Deals, and limited-time
+                        discounts
                       </p>
-                      <button>
-                        See more
-                      </button>
+                      <button>See more</button>
                     </legend>
                     <img
                       className='banner__image banner__image--card'

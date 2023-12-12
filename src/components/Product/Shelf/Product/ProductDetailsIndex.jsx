@@ -22,7 +22,9 @@ function ProductDetailsIndex({ price, name, description, rate }) {
 const ProductPrice = ({ price }) => {
   return (
     <>
-      <span className='product__price product__price--index'>R$ {price?.newPrice}</span>
+      <span className='product__price product__price--index'>
+        R$ {price?.newPrice}
+      </span>
       <span className='product__oldprice product__oldprice--index'>
         {price?.newPrice}
       </span>
@@ -35,7 +37,8 @@ const ProductInstallement = ({ price }) => {
   return (
     <div className='product__installment product__installment--index'>
       <pre className='product__steps product__steps--index'>
-        em {price?.installment.amount} R$ {price?.installment.value} {price?.installment.fees ? "com" : "sem "} juros
+        em {price?.installment.amount} R$ {price?.installment.value}{' '}
+        {price?.installment.fees ? 'com' : 'sem '} juros
       </pre>
       <button className='product__methods product__methods'>
         Ver as formas de pagamento
@@ -56,10 +59,10 @@ const ProductDescription = ({ name, description }) => {
 }
 
 const ProductRate = ({ rate }) => {
-  console.log("&&&&", rate)
+  console.log('&&&&', rate)
   if (rate.average > 5 || rate.average < 0) return
 
-  console.log("¨¨")
+  console.log('¨¨')
 
   const stars = new Array(5).fill(0)
 

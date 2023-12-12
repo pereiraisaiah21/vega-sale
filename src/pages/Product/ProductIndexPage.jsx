@@ -17,7 +17,7 @@ import Amount from '../../components/Product/Component/Amount'
 import Finalization from '../../components/Product/Component/Finalization'
 
 import { getProductData } from '../../api'
-import { generateBreadcrumb } from "/src/utils/productUtils"
+import { generateBreadcrumb } from '/src/utils/productUtils'
 
 import 'react-tabs/style/react-tabs.css'
 
@@ -38,7 +38,7 @@ function ProductIndexPage() {
         })
         setProductData(data)
 
-        console.log("!!!", data)
+        console.log('!!!', data)
       } catch (error) {
         console.error('Ocorreu um erro:', error)
       }
@@ -63,50 +63,49 @@ function ProductIndexPage() {
 
   return (
     <div className='product'>
-      <div className='product__wrap'>
-        <div className="product__top">
-          <section className='product__zoom'>
-            <Breadcrumb
-              style="breadcrumb--product"
-              paths={productData && productData.info && productData.category
-              ? generateBreadcrumb(productData.info, productData.category)
-              : []}
-            />
-            <ImageGallery
-              items={images}
-              showNav={false}
-              thumbnailPosition={'bottom'}
-              showThumbnails={false}
-              showFullscreenButton={false}
-              slideDuration={400}
-              showPlayButton={false}
-            />
-          </section>
-          <section className='product__about'>
-            <div className='product__tech'>
-              <ProductDetailsIndex
-                price={productData?.price}
-                name={productData?.name}
-                description={productData?.fullName}
-                rate={{amount: productData?.reviews.amount, average: productData?.reviews.average}}
+        <div className='product__top'>
+          <div className='product__wrap'>
+            <section className='product__zoom'>
+              <Breadcrumb
+                style='breadcrumb--product'
+                paths={
+                  productData && productData.info && productData.category
+                    ? generateBreadcrumb(productData.info, productData.category)
+                    : []
+                }
               />
-              <Sku />
-              <Freight
-                freight={productData?.delivery}
+              <ImageGallery
+                items={images}
+                showNav={false}
+                thumbnailPosition={'bottom'}
+                showThumbnails={false}
+                showFullscreenButton={false}
+                slideDuration={400}
+                showPlayButton={false}
               />
-              <Tickets
-                tickets={productData?.ticket}
+            </section>
+            <section className='product__about'>
+              <div className='product__tech'>
+                <ProductDetailsIndex
+                  price={productData?.price}
+                  name={productData?.name}
+                  description={productData?.fullName}
+                  rate={{
+                    amount: productData?.reviews.amount,
+                    average: productData?.reviews.average
+                  }}
                 />
-              <Amount
-                amount={productData?.stock}
-                skus={productData?.skus}
-              />
-              <Finalization />
-              <Warnings />
-            </div>
-          </section>
+                <Sku />
+                <Freight freight={productData?.delivery} />
+                <Tickets tickets={productData?.ticket} />
+                <Amount amount={productData?.stock} skus={productData?.skus} />
+                <Finalization />
+                <Warnings />
+              </div>
+            </section>
+          </div>
         </div>
-        <div className="product__bottom">
+        <div className='product__bottom'>
           <ProductCharacteristics
             characteristics={productData?.characteristics}
           />
@@ -114,10 +113,7 @@ function ProductIndexPage() {
           <ProductQuestionAds data={productData?.questions} />
           <ProductReview data={productData?.reviews} />
         </div>
-      </div>
-      <Single
-        banner={productData?.bannerFooter}
-      />
+        <Single banner={productData?.bannerFooter} />
     </div>
   )
 }
