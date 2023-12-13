@@ -35,7 +35,6 @@
     padding: 16px 0;
     font-size: 1.3rem;
     margin: 16px 0;
-    // letter-spacing: 0.1rem;
   }
 
   &__dots {
@@ -195,9 +194,7 @@
     margin: 10px 0;
     font-size: 0.9rem;
 
-    &--index {
-      // margin: 5px 0 0;
-    }
+    &--index {}
   }
 
   &__name {
@@ -403,13 +400,11 @@
     display: inline-flex;
     align-items: center;
     background-color: #e0dbdb;
-    // border-radius: 0 5px 5px 0;
 
     &:nth-child(1) {
       width: 20%;
       background-color: #d4d4d4;
       font-weight: 600;
-      // border-radius: 5px 0 0 5px;
     }
   }
 
