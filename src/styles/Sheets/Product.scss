@@ -8,9 +8,11 @@
       padding: 0 0 2rem;
       position: relative;
     }
+
     &--whiter {
       background-color: white;
     }
+
     svg {
       margin: 0 8px -5px;
     }
@@ -18,15 +20,16 @@
     @media (max-width: 576px) {
       padding: 0 0.5rem;
     }
-    @media (max-width: 767px) {
-    }
-    @media (max-width: 991px) {
-    }
-    @media (max-width: 1199px) {
-    }
-    @media (max-width: 1399px) {
-    }
+
+    @media (max-width: 767px) {}
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 1199px) {}
+
+    @media (max-width: 1399px) {}
   }
+
   &__category {
     width: 100%;
     padding: 16px 0;
@@ -34,6 +37,7 @@
     margin: 16px 0;
     // letter-spacing: 0.1rem;
   }
+
   &__dots {
     position: absolute;
     right: 12px;
@@ -41,6 +45,7 @@
     display: inline-flex;
     column-gap: 0.5rem;
   }
+
   &__arrow {
     padding: 0.5rem;
     display: inline-flex;
@@ -48,27 +53,33 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
+
     &__icon {
       margin: 0 !important;
     }
   }
+
   &__shelf {
     display: flex;
     column-gap: 8px;
     row-gap: 8px;
     width: 100%;
     width: -webkit-fill-available;
+
     &--simple {
       flex-wrap: wrap;
       column-gap: 8px;
     }
+
     &--carousel {
       display: unset !important;
+
       .slick-dots {
         bottom: -56px;
       }
     }
   }
+
   &__item {
     background-color: white;
     border-radius: 10px;
@@ -81,6 +92,7 @@
     display: block;
     color: unset;
     text-decoration: none;
+
     &--simple {
       width: 25%;
       max-width: 233px;
@@ -88,23 +100,26 @@
       @media (max-width: 576px) {
         width: calc(50% - 8px);
       }
-      @media (max-width: 767px) {
-      }
-      @media (max-width: 991px) {
-      }
-      @media (max-width: 1199px) {
-      }
-      @media (max-width: 1399px) {
-      }
+
+      @media (max-width: 767px) {}
+
+      @media (max-width: 991px) {}
+
+      @media (max-width: 1199px) {}
+
+      @media (max-width: 1399px) {}
     }
+
     &--carousel {
       max-width: calc(100% - 8px);
       margin: 0.5rem 0;
     }
   }
+
   &__photo {
     height: 200px;
   }
+
   &__image {
     max-width: 200px;
     max-height: 100%;
@@ -112,25 +127,31 @@
     border-radius: 8px;
     transform: scale(0.7);
   }
+
   &__details {
     padding: 0 1rem 1rem;
     text-align: left;
+
     &--index {}
   }
+
   &__rate {
     &__stars {
       display: inline-flex;
       column-gap: 5px;
     }
+
     &__icon {
       &--high {
         color: green;
       }
     }
+
     &__amount {
       font-size: 0.8rem;
       margin-top: 2px;
     }
+
     &--index {
       display: flex;
       column-gap: 8px;
@@ -138,44 +159,54 @@
       font-size: 0.8rem;
     }
   }
+
   &__oldprice {
     display: block;
     text-decoration: line-through;
     font-size: 0.8rem;
     color: rgb(167, 162, 162);
+
     &--index {
       display: none;
     }
   }
+
   &__price {
     font-size: 1.2rem;
+
     &--index {
       font-size: 1.5rem;
       font-weight: 600;
     }
   }
+
   &__off {
     font-size: 0.8rem;
     margin: 0 8px;
     color: green;
     font-weight: 600;
+
     &--index {
       display: none;
     }
   }
+
   &__installment {
     margin: 10px 0;
     font-size: 0.9rem;
+
     &--index {
       // margin: 5px 0 0;
     }
   }
+
   &__name {
     &--index {
       font-size: 1.3rem;
       margin: 0 0 8px;
     }
   }
+
   &__methods {
     line-height: 1rem;
     font-size: 0.8rem;
@@ -186,16 +217,19 @@
     background-color: unset;
     cursor: pointer;
   }
+
   &__freight {
     line-height: 1rem;
     font-size: 0.8rem;
     color: green;
   }
-  &__steps {
-  }
+
+  &__steps {}
+
   &__shortinfo {
     display: none;
   }
+
   &__wrap {
     position: relative;
     display: flex;
@@ -209,9 +243,11 @@
       padding: 16px;
     }
   }
+
   &__top {
     background-color: rgb(255, 255, 255);
   }
+
   &__bottom {
     position: relative;
     display: flex;
@@ -224,9 +260,11 @@
       padding: 16px;
     }
   }
+
   &__zoom {
     width: 60%;
     width: 70%;
+
     .image-gallery-content .image-gallery-slide .image-gallery-image {
       max-height: unset !important;
       border-radius: 10px;
@@ -236,6 +274,7 @@
       width: 100%;
     }
   }
+
   &__about {
     width: 40%;
     display: flex;
@@ -248,10 +287,12 @@
       padding: 0;
     }
   }
+
   &__tech {
     width: 100%;
-    height: fit-content;  
+    height: fit-content;
   }
+
   &__finalization {
     height: 64px;
     background-color: #fff;
@@ -262,8 +303,9 @@
     justify-content: flex-end;
     column-gap: 8px;
   }
-  &__details {
-  }
+
+  &__details {}
+
   &__go {
     background: unset;
     height: 100%;
@@ -275,18 +317,21 @@
     box-shadow: 0 0 1px rgb(77, 230, 77);
     border-radius: 5px;
     cursor: pointer;
+
     &--cart {
       flex-grow: unset;
       width: 48px;
       border-radius: 5px;
     }
   }
+
   &__specification {
     background-color: #fff;
     margin-top: 8px;
     padding: 32px;
     display: none;
   }
+
   &__sidetoside {
     display: flex;
     width: 100%;
@@ -297,6 +342,7 @@
       width: 100%;
     }
   }
+
   &__allinfo {
     padding: 16px 0;
     min-width: 600px;
@@ -306,12 +352,14 @@
     border-radius: 8px;
     padding: 32px;
     border: 1px solid #fffcfc;
+
     &--comments {
       width: 70%;
       min-width: unset;
       max-height: 500px;
       overflow: scroll;
     }
+
     &--products {
       width: 30%;
       min-width: unset;
@@ -319,29 +367,36 @@
 
     @media (max-width: 768px) {
       min-width: unset;
+
       &--comments {
         width: 100%;
       }
+
       &--products {
         width: 100%;
       }
     }
   }
+
   &__section {
     margin: 0 0 48px;
     font-size: 1.3rem;
   }
+
   &__characteristic {
     margin: 0 0 16px;
   }
+
   &__table {
     width: 100%;
   }
+
   &__row {
     display: flex;
     width: 100%;
     min-height: 3rem;
   }
+
   &__td {
     width: 80%;
     padding: 0.5rem 1rem;
@@ -357,35 +412,42 @@
       // border-radius: 5px 0 0 5px;
     }
   }
+
   &__skus {
     display: flex;
     padding: 0.5rem;
     column-gap: 16px;
+
     &__button {
       background-color: unset;
       border: none;
       padding: 16px 0;
       cursor: pointer;
+
       a {
         text-decoration: none;
         color: black;
       }
     }
+
     &__icon {
       margin: 0 0 -5px;
       font-size: 1.2rem;
     }
   }
+
   &__skus,
   &__color,
   &__size {
     display: none !important;
   }
+
   &__color {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     font-size: 0.9rem;
+
     &__item {
       &--title {
         border: none;
@@ -394,20 +456,24 @@
         margin: 0 0 16px;
       }
     }
+
     &__unit {
       padding: 8px 0.25rem;
       font-weight: 600;
       cursor: pointer;
     }
   }
+
   &__size {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     font-size: 0.9rem;
+
     &__item {
       border: 1px solid greenyellow;
       padding: 3px;
+
       &--title {
         border: none;
         padding: 0;
@@ -415,6 +481,7 @@
         margin: 0 0 16px;
       }
     }
+
     &__unit {
       display: block;
       height: 12px;
@@ -423,11 +490,13 @@
       background-color: aquamarine;
     }
   }
+
   &__delivery {
     background-color: rgb(238, 238, 238);
     padding: 16px 0;
     border-radius: 5px;
     margin: .5rem 1rem 0;
+
     &__icon {
       position: absolute;
       top: 10px;
@@ -435,24 +504,28 @@
       font-size: 1rem;
     }
   }
+
   &__deliveryform {
     padding: 8px 16px 8px 42px;
     font-size: 0.9rem;
     position: relative;
     line-height: 22px;
   }
+
   &__ticket {
     padding: 16px;
     font-size: 0.9rem;
     background-color: azure;
     border-radius: 5px;
     margin: .5rem 1rem 0;
+
     &__list {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
       padding: 8px 0;
     }
+
     &__item {
       padding: 5px 7px;
       color: rgb(128, 11, 238);
@@ -460,18 +533,22 @@
       white-space: nowrap;
       font-size: 0.8rem;
     }
+
     &__icon {
       margin: 0 6px 0 3px;
     }
   }
+
   &__amount {
     padding: 32px 16px 16px;
     font-size: 0.9rem;
     margin: .5rem 1rem 0;
+
     &__title {
       display: block;
       padding: 0 0 16px;
     }
+
     &__select {
       margin: 8px 0;
       padding: 0.5rem 1rem;
@@ -481,33 +558,40 @@
       border-color: #ccc;
     }
   }
+
   &__description {
     margin: 32px 0 0;
   }
+
   &__tabs {
     &__list {
       display: flex;
       column-gap: 16px;
     }
+
     &__item {
       cursor: pointer;
       padding: 0 0 8px;
+
       &.react-tabs__tab--selected {
         background-color: unset;
         border-bottom: 1px solid rgb(45, 226, 45);
       }
     }
-    &__content {
-    }
+
+    &__content {}
   }
+
   &__warnings {
     margin: .5rem 1rem 0;
     padding: 16px;
     font-size: 0.9rem;
+
     &__item {
       padding: 4px 0;
     }
   }
+
   &__comments {
     &__entry {
       display: flex;
@@ -516,6 +600,7 @@
       border: none;
       align-content: center;
     }
+
     &__input {
       flex-grow: 1;
       padding: 8px;
@@ -523,6 +608,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
     &__send {
       background-color: rgb(45, 226, 45);
       color: white;
@@ -531,69 +617,84 @@
       cursor: pointer;
       border-radius: 5px;
     }
-    &__made {
-    }
+
+    &__made {}
+
     &__title {
       font-size: 1.1rem;
       font-weight: 600;
       margin: 32px 0 16px;
     }
+
     &__comment {
       padding: 16px 0;
     }
+
     &__answer {
       margin: 8px 0 0 16px;
       font-size: 0.9rem;
+
       svg {
         margin: 5px 0.5rem 0 0;
       }
     }
   }
+
   &__reviews {
     display: flex;
+
     &__abouts {
       width: 30%;
     }
+
     &__about {
       &--title {
         font-size: 1.2rem;
         font-weight: 600;
         padding: 16px 0;
       }
+
       &--subtitle {
         font-weight: 600;
         padding: 16px 0;
       }
+
       &--characteristic {
         font-size: 0.8rem;
         line-height: 1.2rem;
         padding: 6px 0;
       }
     }
+
     &__made {
       width: 70%;
     }
+
     &__title {
       font-size: 1.2rem;
       font-weight: 600;
       padding: 16px 0;
     }
+
     &__review {
       padding: 16px 0;
       display: flex;
       width: 100%;
       flex-wrap: wrap;
     }
+
     &__text {
       padding: 8px 0 16px;
       flex-grow: 1;
       max-width: 70%;
     }
-    &__icon {
-    }
+
+    &__icon {}
+
     &__interact {
       padding-top: 8px;
     }
+
     &__opine {
       padding: 8px;
       background-color: bisque;
@@ -602,11 +703,13 @@
       margin-right: 8px;
       cursor: pointer;
     }
+
     &__tags {
       padding: 8px 0;
       display: flex;
       gap: 8px;
       width: 100%;
+
       &__item {
         padding: 5px 7px;
         color: rgb(128, 11, 238);
@@ -615,7 +718,7 @@
         font-size: 0.8rem;
       }
     }
-    &__stars {
-    }
+
+    &__stars {}
   }
 }

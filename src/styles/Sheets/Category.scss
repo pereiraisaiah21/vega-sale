@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   &__header {
     display: flex;
     width: 100%;
@@ -13,28 +14,29 @@
     padding: 1rem 0;
     border-bottom: 1px solid #ccc;
   }
+
   &__aside {
     width: 20%;
     padding: 2rem 0;
   }
+
   &__name {
     font-size: 2rem;
     font-weight: 600;
     width: 20%;
   }
-  &__filters {
-  }
+
+  &__filters {}
+
   &__filter {
-    &-- {
-    }
+    &-- {}
   }
+
   &__order {
     display: inline-flex;
   }
-  &__button {
-    &-- {
-    }
-  }
+
+  &__button {}
 
   &__main {
     width: 80%;
@@ -44,6 +46,6 @@
       display: none;
     }
   }
-  &__footer {
-  }
+
+  &__footer {}
 }

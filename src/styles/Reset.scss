@@ -8,6 +8,7 @@ body,
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
 }
+
 html,
 body,
 div,
@@ -96,6 +97,7 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
 }
+
 article,
 aside,
 details,
@@ -109,18 +111,22 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
   background-color: #fbf8f8;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -128,6 +134,7 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;

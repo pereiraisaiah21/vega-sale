@@ -1,26 +1,31 @@
 .footer {
   background-color: #fff;
   padding: 32px 0 0;
+
   &__wrapper {
     max-width: 1200px;
     margin: auto;
     padding: 16px 0;
   }
+
   &__pages {
     width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 32px;
     padding: 32px 0;
+
     &__section {
       min-width: 200px;
     }
+
     &__name {
       font-weight: 600;
       font-size: 1.1rem;
     }
-    &__item {
-    }
+
+    &__item {}
+
     &__link {
       padding: 16px 0;
       text-decoration: none;
@@ -28,6 +33,7 @@
       line-height: 2rem;
       font-size: .9rem;
       font-weight: 500;
+
       &--name {
         font-weight: 600;
         font-size: 1rem;
@@ -37,11 +43,13 @@
     @media (max-width: 768px) {
       flex-wrap: wrap;
       padding: 16px;
+
       &__section {
         min-width: 150px;
       }
     }
   }
+
   &__content {
     display: inline-flex;
     width: 100%;
@@ -52,12 +60,14 @@
       flex-wrap: wrap;
     }
   }
+
   &__text {
     @media (max-width: 768px) {
       width: 100%;
       text-align: center;
     }
   }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -67,9 +77,11 @@
       justify-content: center;
     }
   }
+
   &__item {
     min-width: 200px;
     padding: 0.5rem 0;
+
     &--powered {
       flex-grow: 1;
       text-align: end;
@@ -81,6 +93,7 @@
       }
     }
   }
+
   &__link {
     padding: 16px;
     text-decoration: none;
