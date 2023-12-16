@@ -22,11 +22,11 @@ function ProductDetailsIndex({ price, name, description, rate }) {
 const ProductPrice = ({ price }) => {
   return (
     <>
-      <span className='product__price product__price--index'>
+      <span className='product__oldprice product__oldprice--index'>
         R$ {price?.newPrice}
       </span>
-      <span className='product__oldprice product__oldprice--index'>
-        {price?.newPrice}
+      <span className='product__price product__price--index'>
+        R$ {price?.newPrice}
       </span>
       <span className='product__off product__off--index'>30% OFF</span>
     </>

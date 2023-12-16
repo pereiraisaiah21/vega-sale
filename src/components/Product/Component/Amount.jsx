@@ -9,23 +9,46 @@ import { BsArrowDownShort } from 'react-icons/bs'
 const Amount = ({ amount, skus }) => {
   const [quantity, setQuantity] = useState(0)
 
-  const handleQuantityChange = (event) => {
-    const newQuantity = parseInt(event.target.value, 10)
+  const handleQuantityChange = (newQuantity) => {
     const limitedQuantity = Math.min(Math.max(newQuantity, 0), 100)
-
-    setQuantity(parseInt(event.target.value, 10))
+    setQuantity(limitedQuantity)
   }
+
+  const handleIncrement = () => {
+    handleQuantityChange(quantity + 1)
+  }
+
+  const handleDecrement = () => {
+    handleQuantityChange(quantity - 1)
+  }
+
   return (
     <div className='product__amount'>
       <span className='product__amount__title'>Quantidade</span>
-      <input
-        className='product__amount__select'
-        type='number'
-        value={quantity}
-        onChange={handleQuantityChange}
-        min='0'
-        max={amount}
-      />
+      <div className='product__amount__controls'>
+        <button
+          className='product__amount__control-button'
+          onClick={handleDecrement}
+          disabled={quantity === 0}
+        >
+          -
+        </button>
+        <input
+          className='product__amount__select'
+          type='number'
+          value={quantity}
+          onChange={(e) => handleQuantityChange(parseInt(e.target.value, 10))}
+          min='0'
+          max={amount}
+        />
+        <button
+          className='product__amount__control-button'
+          onClick={handleIncrement}
+          disabled={quantity === amount}
+        >
+          +
+        </button>
+      </div>
       <button className='product__skus__button'>
         <a href='#description'>
           Ver detalhes <BsArrowDownShort className='product__skus__icon' />

@@ -21,7 +21,7 @@ export const calculateDayOfWeek = (daysForward) => {
 
 export const generateBreadcrumb = ({ info, category }) => {
   console.log(info, category)
-  const breadcrumb = [{ label: 'Home', url: '/' }]
+  const breadcrumb = [{ label: 'Voltar', url: '/' }, { label: 'Home', url: '/' }]
 
   if (category && category.name && category.path) {
     breadcrumb.push({ label: category.name, url: `/category/${category.path}` })
