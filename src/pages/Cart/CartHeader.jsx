@@ -11,7 +11,7 @@ const Header = () => {
           <div className='header__bottom'>
             <div className='header__logo'>
               <span className='header__logo__icon'>orion sale</span>
-              <h1 className='header__logo__title'>Orion sale</h1>
+              <h1 className='header__logo__title'>Vega sale</h1>
             </div>
             <nav className='header__nav'>
               <ul className='header__list'>

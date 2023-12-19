@@ -13,12 +13,16 @@
     margin: 0 auto;
   }
 
+  &__title {
+    text-align: left !important;
+    margin: 1rem 0 1.5rem !important;
+    font-weight: 700;
+  }
+
   &__content {
     p {
       margin: 0 0 1rem;
       width: 100%;
-      font-weight: 700;
-      font-size: 1.3rem;
       text-align: center;
     }
   }
@@ -64,7 +68,7 @@
 
   &__item-image {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     margin: 0 auto;
     border-radius: 10px;
@@ -176,13 +180,11 @@
       background-color: #f4f4f4;
       max-width: 1200px;
       margin: auto;
-      padding: 20px;
       display: flex;
       justify-content: center;
     }
 
     &__logo {
-      flex: 1;
 
       &__title {
         font-size: 2rem;
@@ -203,13 +205,17 @@
 
         a {
           color: black;
+          font-size: 1.3rem;
         }
       }
     }
 
+    &__contact {
+      flex: 1;
+    }
+
     &__contact,
     &__social {
-      flex: 1;
 
       p {
         margin: 5px 0;
@@ -255,7 +261,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 2.75rem 2rem 0;
+      padding: 2rem 2rem 0;
     }
 
     &__item {
@@ -321,7 +327,6 @@
 
 .shippingForm {
   display: flex;
-  background-color: #f2f2f2;
   margin: 1rem 0;
   padding: 2rem;
 
@@ -409,7 +414,6 @@
 
 .paymentForm {
   display: flex;
-  background-color: #f2f2f2;
   margin: 1rem 0;
   padding: 2rem;
 

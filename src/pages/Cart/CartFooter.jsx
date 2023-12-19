@@ -10,10 +10,10 @@ const Footer = () => {
     <footer className='checkout__footer'>
       <div className='checkout__footer__wrapper'>
         <div className='checkout__footer__logo'>
-          <h1 className='checkout__footer__logo__title'>Orion Sale</h1>
+          <h1 className='checkout__footer__logo__title'>Vega Sale</h1>
         </div>
         <div className='checkout__footer__contact'>
-          <p>contato@orionsale.com</p>
+          <p>contato@vegasale.com</p>
           <p>Rua Orion, 123 - São Paulo, Brasil</p>
         </div>
         <div className='checkout__footer__social'>

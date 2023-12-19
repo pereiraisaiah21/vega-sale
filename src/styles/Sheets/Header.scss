@@ -317,5 +317,10 @@
     border: none;
     background-color: unset;
     cursor: pointer;
+
+    svg {
+      margin: 0 1rem -8px 0;
+      font-size: 1.5rem;
+    }
   }
 }

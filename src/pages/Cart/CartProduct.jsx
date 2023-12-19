@@ -21,7 +21,6 @@ const CartProduct = ({ cartItems, setCartItems, total, totalPrice }) => {
     slidesToScroll: 1,
     speed: 500,
     infinite: false,
-    // spaceBetween: 100,
     dots: false,
     centerMode: false
   }
@@ -54,7 +53,7 @@ const CartProduct = ({ cartItems, setCartItems, total, totalPrice }) => {
   return (
     <section>
       <div className='checkout__wrap'>
-        <p>Seus produtos</p>
+        <p className='checkout__title'>Meus produtos</p>
         <Slider ref={slider} {...sliderSettings} className='checkout__list'>
           {cartItems.map((item) => (
             <li className='checkout__item' key={item.id}>
