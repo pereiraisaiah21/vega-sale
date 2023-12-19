@@ -165,9 +165,7 @@
     font-size: 0.8rem;
     color: rgb(167, 162, 162);
 
-    &--index {
-      // display: none;
-    }
+    &--index {}
   }
 
   &__price {
@@ -185,13 +183,10 @@
     color: #6e00ff;
     font-weight: 600;
 
-    &--index {
-      // display: none;
-    }
+    &--index {}
   }
 
   &__installment {
-    // margin: 10px 0;
     font-size: 0.9rem;
 
     &--index {}
