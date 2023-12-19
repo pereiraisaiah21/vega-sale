@@ -8,8 +8,7 @@ const ProductCharacteristics = ({ data }) => {
   return (
     <section className='product__allinfo' id='description'>
       <h3 className='product__section'>
-        {' '}
-        Conheça todos detalhes do seu próximo fone{' '}
+        Conheça as caracteristicas
       </h3>
       <div className='product__table'>
         <div className='product__row'>

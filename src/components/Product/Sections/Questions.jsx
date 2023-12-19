@@ -35,7 +35,7 @@ const Questions = ({ data }) => {
   }
 
   return (
-    <section className='product__allinfo product__allinfo--comments'>
+    <section className='product__allinfo product__allinfo--comments product__allinfo--spaced'>
       <h3 className='product__section'>
         Conheça todos detalhes do seu próximo fone
       </h3>

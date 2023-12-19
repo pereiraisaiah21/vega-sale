@@ -11,7 +11,7 @@ import { BiLike, BiDislike } from 'react-icons/bi'
 const ProductReview = ({ data }) => {
   console.log(data)
   return (
-    <section className='product__allinfo'>
+    <section className='product__allinfo product__allinfo--spaced'>
       <h3 className='product__section'>Confira as avaliações</h3>
       <div className='product__reviews'>
         <ul className='product__reviews__abouts'>

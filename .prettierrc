@@ -1,28 +1,23 @@
 {
-  "semi": false,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "useTabs": false,
-  "jsxSingleQuote": true,
-  "jsxBracketSameLine": true,
-  "arrowParens": "always",
-  "trailingComma": "none",
-  "bracketSpacing": true,
-  "endOfLine": "auto",
-  "arrayBracketSpacing": false,
-  "overrides": [
-    {
-      "files": ["*.js", "*.jsx"],
-      "options": {
-        "semi": false
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "jsxBracketSameLine": false,
+    "arrowParens": "always",
+    "insertPragma": true,
+    "overrides": [
+      {
+        "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
+        "options": {
+          "singleQuote": true,
+          "semi": false,
+          "trailingComma": "all",
+          "jsxBracketSameLine": false,
+          "arrowParens": "always",
+          "insertPragma": true
+        }
       }
-    }
-  ],
-  "insertPragma": false,
-  "requirePragma": false,
-  "proseWrap": "always",
-  "htmlWhitespaceSensitivity": "strict",
-  "vueIndentScriptAndStyle": false,
-  "quoteProps": "as-needed",
-  "embeddedLanguageFormatting": "auto"
-}
+    ]
+  }
+  

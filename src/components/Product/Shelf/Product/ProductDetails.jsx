@@ -7,9 +7,9 @@
 function ProductDetails({ price, name, description }) {
   return (
     <div className='product__details'>
+      <ProductDescription name={name} description={description} />
       <ProductPrice price={price} />
       <ProductInstallement price={price} />
-      <ProductDescription name={name} description={description} />
     </div>
   )
 }

@@ -28,7 +28,7 @@ function Header() {
               className='header__link header__link--top header__link--top--first'
               href=''
             >
-              Sponsored by
+              Powered by
             </a>
           </li>
           <li>
