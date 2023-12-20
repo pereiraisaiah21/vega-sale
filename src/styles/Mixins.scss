@@ -14,7 +14,7 @@
 }
 
 // Button
-@mixin button($background-color, $text-color: #fff, $padding) {
+@mixin button($background-color, $text-color: $font-white, $padding) {
     all: unset;
     display: inline-block;
     font-size: $default-font-size;

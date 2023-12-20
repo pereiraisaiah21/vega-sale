@@ -8,7 +8,7 @@
     }
 
     &--whiter {
-      background-color: white;
+      background-color: $background-white;
     }
 
     svg {
@@ -47,7 +47,7 @@
     padding: 0.5rem;
     display: inline-flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid $border-gray;
     border-radius: 5px;
     cursor: pointer;
 
@@ -78,7 +78,7 @@
   }
 
   &__item {
-    background-color: white;
+    background-color: $background-white;
     border-radius: 10px;
     padding: 8px 0 0;
     box-shadow:
@@ -140,7 +140,7 @@
 
     &__icon {
       &--high {
-        color: #6e00ff;
+        color: $highlight-color;
       }
     }
 
@@ -178,7 +178,7 @@
   &__off {
     font-size: 0.8rem;
     margin: 0 8px;
-    color: #6e00ff;
+    color: $highlight-color;
     font-weight: 600;
 
     &--index {}
@@ -199,7 +199,7 @@
   &__methods {
     line-height: 1rem;
     font-size: 0.8rem;
-    color: #6e00ff;
+    color: $highlight-color;
     padding: 0;
     margin: 1rem 0 0;
     border: 0;
@@ -210,7 +210,7 @@
   &__freight {
     line-height: 1rem;
     font-size: 0.8rem;
-    color: #6e00ff;
+    color: $highlight-color;
     font-family: inherit;
   }
 
@@ -279,7 +279,7 @@
 
   &__finalization {
     height: 64px;
-    background-color: #fff;
+    background-color: $background-white;
     display: flex;
     padding: 1rem 0;
     flex-wrap: wrap;
@@ -291,9 +291,9 @@
   &__details {}
 
   &__go {
-    @include button($background-color: rgb(77, 230, 77), $padding: .5rem 1rem);
+    @include button($background-color: $background-green, $padding: .5rem 1rem);
     flex-grow: 1;
-    box-shadow: 0 0 1px rgb(77, 230, 77);
+    box-shadow: 0 0 1px $background-green;
 
     &--cart {
       flex-grow: unset;
@@ -302,7 +302,7 @@
   }
 
   &__specification {
-    background-color: #fff;
+    background-color: $background-white;
     margin-top: 8px;
     padding: 32px;
     display: none;
@@ -403,7 +403,7 @@
 
       a {
         text-decoration: none;
-        color: black;
+        color: $font-black;
       }
     }
 

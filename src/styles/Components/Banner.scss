@@ -2,7 +2,7 @@
 
 .banner {
   &__head {
-    background-color: #fff;
+    background-color: $background-white;
     padding: .5rem 0 2rem;
     margin: 0 0 2rem;
   }
@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    background-color: #fff;
+    background-color: $background-white;
     border: 1px solid #ccc;
     z-index: 1000;
     color: #ccc;
@@ -44,7 +44,7 @@
 
   &__link {
     text-decoration: unset;
-    color: #000;
+    color: $font-black;
 
     &--hightlight {}
 
