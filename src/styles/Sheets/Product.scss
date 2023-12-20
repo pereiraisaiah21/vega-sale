@@ -1,11 +1,9 @@
+@import "../Mixins.scss";
+
 .product {
   &__list {
     &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: auto;
-      padding: 0 0 2rem;
+      @include container($padding: 0 0 2rem, $is-flex: true, $is-wrap: true);
       position: relative;
     }
 
@@ -223,13 +221,7 @@
   }
 
   &__wrap {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-radius: 5px;
-    padding: 1rem 0;
+    @include container($padding: 1rem 0,$is-flex: true, $is-wrap: true);
 
     @media (max-width: 768px) {
       padding: 16px;
@@ -299,21 +291,13 @@
   &__details {}
 
   &__go {
-    background: unset;
-    height: 100%;
-    background-color: rgb(77, 230, 77);
-    color: #fff;
-    border: none;
+    @include button($background-color: rgb(77, 230, 77), $padding: .5rem 1rem);
     flex-grow: 1;
-    font-size: 1rem;
     box-shadow: 0 0 1px rgb(77, 230, 77);
-    border-radius: 5px;
-    cursor: pointer;
 
     &--cart {
       flex-grow: unset;
       width: 48px;
-      border-radius: 5px;
     }
   }
 
@@ -346,10 +330,7 @@
     }
     
     &--spaced {
-      background-color: rgb(253, 253, 253);
-      border: 1px solid #fffcfc;
-      border-radius: 8px;
-      padding: 32px;
+      @include product-sections-container;
     }
 
     &--comments {
@@ -495,7 +476,7 @@
       position: absolute;
       top: 8px;
       left: 16px;
-      font-size: 1rem;
+      font-size: $default-font-size;
     }
   }
 
@@ -507,7 +488,7 @@
   }
 
   &__ticket {
-    padding: 1rem;
+    padding: $default-padding;
     font-size: 0.9rem;
     background-color: #f2f0ff;
     border-radius: 5px;
@@ -616,12 +597,7 @@
     }
 
     &__send {
-      background-color: rgb(45, 226, 45);
-      color: white;
-      font-weight: 600;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 5px;
+      @include button($background-color: rgb(45, 226, 45), $padding: 10px);
     }
 
     &__made {}

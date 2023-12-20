@@ -404,7 +404,7 @@
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 16px;
+    font-size: $default-font-size;
 
     &:hover {
       background-color: #45a049;
@@ -511,7 +511,7 @@
         }
 
         p {
-          font-size: 16px;
+          font-size: $default-font-size;
           margin-bottom: 5px;
           text-align: start;
         }
@@ -548,7 +548,7 @@
       }
 
       p {
-        font-size: 16px;
+        font-size: $default-font-size;
         margin: 0;
       }
     }

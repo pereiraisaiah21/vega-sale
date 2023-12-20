@@ -1,3 +1,5 @@
+@import "../Mixins.scss";
+
 .banner {
   &__head {
     background-color: #fff;
@@ -6,10 +8,7 @@
   }
 
   &__wrapper {
-    max-width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    margin: 0 auto;
+    @include container;
 
     .slick-dots {
       text-align: end;
@@ -18,15 +17,9 @@
       position: relative !important;
     }
 
-    &--highlight {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    &--highlight {}
 
-    &--card {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+    &--card {}
   }
 
   &__tip {
@@ -138,11 +131,8 @@
   }
 
   &__advantadges {
-    max-width: 1200px;
-    border-radius: 10px;
-    background-color: #f7f7f7;
     margin: 2rem auto;
-    padding: 1rem;
+    padding: $default-padding;
 
     @media (max-width: 576px) {
       margin: 3rem 0.5rem;
@@ -249,11 +239,7 @@
     }
 
     &__button {
-      background-color: greenyellow;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 10px;
-      color: #fff;
+      @include button(greenyellow, #fff, .5rem 1rem);
     }
 
     @media (max-width: 576px) {

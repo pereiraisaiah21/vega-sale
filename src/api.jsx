@@ -1018,17 +1018,17 @@ export async function getFooterSectionsData() {
           {
             id: '',
             name: 'Terms and conditions',
-            link: ''
+            link: '/institutional/name'
           },
           {
             id: '',
             name: 'Privacy and policy',
-            link: ''
+            link: '/institutional/name'
           },
           {
             id: '',
             name: 'Contact us',
-            link: ''
+            link: '/institutional/name'
           }
         ]
       }

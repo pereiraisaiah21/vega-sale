@@ -144,7 +144,7 @@
   &__link {
     text-decoration: none;
     color: #000;
-    font-size: 1rem;
+    font-size: $default-font-size;
     font-weight: 600;
 
     &__icon {
@@ -180,7 +180,7 @@
 
     &--user {
       padding: 8px 0 8px 12px;
-      font-size: 1rem;
+      font-size: $default-font-size;
       display: inline-flex;
       align-items: center;
     }
