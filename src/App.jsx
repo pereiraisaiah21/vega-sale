@@ -8,6 +8,7 @@ import Cart from './pages/Cart/Cart'
 
 import './styles/Main.scss'
 import Category from './pages/Category/Category'
+import InstitutionalIndexPage from './pages/Institucional/InstitutionalIndexPage'
 
 /**
  *
@@ -30,11 +31,11 @@ const router = createBrowserRouter([
   {
     path: '/category/:id?',
     element: <Category />
+  },
+  {
+    path: '/institutional/:name',
+    element: <InstitutionalIndexPage />
   }
-  // {
-  //   path: '/institutional',
-  //   element: <IntitutionalIndexPage />
-  // }
 ])
 
 /**
